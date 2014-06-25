@@ -13,11 +13,17 @@
     "type": "git",
     "url": "https://github.com/Rise-Vision/gulp-html2string.git"
   },
-  "private": true,
+  "private": false,
   "keywords": [
-    "gulp"
+    "gulp",
+    "html",
+    "javascript",
+    "string",
+    "conversion"
   ],
-  "author": "Rise Vision",
+  "contributors": {
+    "Xiyang Chen <settinghead@gmail.com"
+  }
   "license": "GPLv3",
   "bugs": {
     "url": "https://github.com/Rise-Vision/gulp-html2string/issues"
