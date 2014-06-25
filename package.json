@@ -21,9 +21,10 @@
     "string",
     "conversion"
   ],
-  "contributors": {
-    "Xiyang Chen <settinghead@gmail.com"
-  }
+  "contributors": [
+    "Xiyang Chen <settinghead@gmail.com>",
+    "xvfeng"
+  ],
   "license": "GPLv3",
   "bugs": {
     "url": "https://github.com/Rise-Vision/gulp-html2string/issues"
