@@ -15,7 +15,11 @@
   },
   "private": false,
   "keywords": [
-    "gulp"
+    "gulp",
+    "html",
+    "javascript",
+    "string",
+    "conversion"
   ],
   "contributors": {
     "Xiyang Chen <settinghead@gmail.com"
