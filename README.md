@@ -25,8 +25,9 @@ gulp.task('html2js', function () {
         base: path.join(__dirname, 'html'), //The base path of HTML templates
         createObj: true, // Indicate wether to define the global object that stores
                          // the global template strings
-        objName: 'TEMPLATES'  // Name of the global template store variable
+        objName: 'TEMPLATES',  // Name of the global template store variable
                               //say the converted string for myTemplate.html will be saved to TEMPLATE['myTemplate.html']
+        noObject: false // If set to true, output will be TEMPLATE = ... instead of TEMPLATE['myTemplate.html']
       }))
       .pipe(rename({extname: '.js'}))
       .pipe(gulp.dest('templates/')); //Output folder

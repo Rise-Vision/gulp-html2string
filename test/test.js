@@ -30,4 +30,27 @@
     stream.end();
   });
 
+  it('should not create an object if noObject is set', function(cb){
+    var stream = templateStrBuilder({objName: 'TEH_TEMPLATES', createObj: true, noObject:true, base: __dirname});
+
+    stream.on('data', function (data) {
+      assert.equal(data.contents.toString(),
+      'if(typeof TEH_TEMPLATES === \'undefined\') {var TEH_TEMPLATES = {};}\n' +
+      'TEH_TEMPLATES = "<html>\\n" +' +
+      '\n    "<head></head>\\n" +' +
+      '\n    "<body class=\\\"hello\\\">Test, \'single quote\', \\\"double quote\\\"<body>\\n" +' +
+      '\n    "</html>\\n" +' +
+      '\n    ""; ');
+      cb();
+    });
+
+    stream.write(new gutil.File({
+      path: join(__dirname, './test-template.html'),
+      contents: fs.readFileSync(join(__dirname, './test-template.html'))
+    }));
+
+    stream.end();
+  });
+
 })();
+

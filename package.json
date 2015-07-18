@@ -1,6 +1,6 @@
 {
   "name": "gulp-html2string",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Converts static HTML templates to JavaScript strings.",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,8 @@
   ],
   "contributors": [
     "Xiyang Chen <settinghead@gmail.com>",
-    "xvfeng"
+    "xvfeng",
+    "Juan Camilo O <jcoc611@gmail.com>"
   ],
   "license": "GPLv3",
   "bugs": {
