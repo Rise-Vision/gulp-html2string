@@ -1,13 +1,13 @@
 {
   "name": "gulp-html2string",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "Converts static HTML templates to JavaScript strings.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=8.10.0"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,8 @@
   ],
   "contributors": [
     "Xiyang Chen <settinghead@gmail.com>",
-    "xvfeng"
+    "xvfeng",
+	"AQuietDoggo <AQuietDoggo@protonmail.com>"
   ],
   "license": "MIT",
   "bugs": {
