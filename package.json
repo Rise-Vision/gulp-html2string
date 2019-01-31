@@ -25,19 +25,19 @@
     "Xiyang Chen <settinghead@gmail.com>",
     "xvfeng"
   ],
-  "license": "GPLv3",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Rise-Vision/gulp-html2string/issues"
   },
   "homepage": "https://github.com/Rise-Vision/gulp-html2string",
   "devDependencies": {
-    "mocha": "~1.20.1"
+    "mocha": "^5.2.0"
   },
   "dependencies": {
-    "gulp": "~3.8.1",
-    "gulp-util": "~2.2.17",
+    "gulp": "^4.0.0",
     "html-minifier": "^0.6.2",
     "map-stream": "^0.1.0",
+    "minimatch": "^3.0.4",
     "through2": "~0.5.1"
   }
 }
