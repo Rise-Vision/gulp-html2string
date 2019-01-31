@@ -16,8 +16,9 @@ npm install gulp-html2string
 In your project's gulpfile.js, create the following task:
 
 ```javascript
-
+const path = require('path');
 var html2string = require('gulp-html2string');
+var rename = require("gulp-rename");
 
 gulp.task('html2js', function () {
     return gulp.src('html/*.html')
