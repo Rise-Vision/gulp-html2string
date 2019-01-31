@@ -3,7 +3,8 @@
   'use strict';
 
   var assert = require('assert');
-  var gutil = require('gulp-util');
+  //var gutil = require('gulp-util');
+  var vinyl = require("vinyl");
   var templateStrBuilder = require('../index.js');
   var join = require('path').join;
   var fs = require('fs');
@@ -21,11 +22,13 @@
       '\n    ""; ');
       cb();
     });
-
-    stream.write(new gutil.File({
-      path: join(__dirname, './test-template.html'),
-      contents: fs.readFileSync(join(__dirname, './test-template.html'))
-    }));
+	var htmlTemplate = new vinyl({
+		'base' : __dirname,
+		'path' : './test/test-template.html',
+		'contents' : fs.readFileSync(join(__dirname, './test-template.html'))
+	});
+	
+    stream.write(htmlTemplate);
 
     stream.end();
   });

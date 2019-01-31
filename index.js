@@ -2,7 +2,6 @@
 
   'use strict';
   var map = require('map-stream');
-  var gutil = require('gulp-util');
   var compile = require('./lib/compile');
 
   module.exports = function(options) {
