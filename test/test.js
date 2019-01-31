@@ -10,12 +10,12 @@
   var fs = require('fs');
 
   it('should compile HTML templates', function (cb) {
-    var stream = templateStrBuilder({objName: 'TEH_TEMPLATES', createObj: true, base: __dirname});
+    var stream = templateStrBuilder({objName: 'TEH_TEMPLATES', createObj: true, base: __dirname, templateName:"test"});
 
     stream.on('data', function (data) {
       assert.equal(data.contents.toString(),
       'if(typeof TEH_TEMPLATES === \'undefined\') {var TEH_TEMPLATES = {};}\n' +
-      'TEH_TEMPLATES[\'' + 'test-template.html' + '\'] = "<html>\\n" +' +
+      'TEH_TEMPLATES[\'' + 'test' + '\'] = "<html>\\n" +' +
       '\n    "<head></head>\\n" +' +
       '\n    "<body class=\\\"hello\\\">Test, \'single quote\', \\\"double quote\\\"<body>\\n" +' +
       '\n    "</html>\\n" +' +
